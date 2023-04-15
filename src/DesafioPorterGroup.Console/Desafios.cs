@@ -8,6 +8,7 @@ namespace DesafioPorterGroup.Console
 {
     public class Desafios
     {
+        #region Desafio ObterNumeroPorExtenso
         public static string ObterNumeroPorExtenso(int numero)
         {
             int quantidadeDigitos = numero.ToString().Length;
@@ -248,5 +249,9 @@ namespace DesafioPorterGroup.Console
             return valorPorExtensoCentenas;
         }
 
-        }
+        #endregion
+
+
+
+    }
 }
