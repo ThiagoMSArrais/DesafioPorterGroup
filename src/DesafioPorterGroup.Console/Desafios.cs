@@ -202,7 +202,7 @@ namespace DesafioPorterGroup.Console
             return valorPorExtensoDezenas;
         }
 
-            private static string DefinirValorDeCentenasPorExtenso(int numero)
+        private static string DefinirValorDeCentenasPorExtenso(int numero)
         {
             string valorPorExtensoCentenas = string.Empty;
 
@@ -247,61 +247,6 @@ namespace DesafioPorterGroup.Console
 
             return valorPorExtensoCentenas;
         }
-
-            
-
-
-
-            //public static string NumeroPorExtenso(int numero)
-            //{
-            //    string[] unidades = { "zero", "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove" };
-            //    string[] dezenas = { "dez", "onze", "doze", "treze", "catorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove" };
-            //    string[] dezenasMultiplos = { "", "", "vinte", "trinta", "quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa" };
-            //    string[] centenasMultiplos = { "", "cento", "duzentos", "trezentos", "quatrocentos", "quinhentos", "seiscentos", "setecentos", "oitocentos", "novecentos" };
-
-            //    string extenso = "";
-
-            //    if (numero < 0)
-            //    {
-            //        extenso = "menos ";
-            //        numero = -numero;
-            //    }
-
-            //    if (numero < 10)
-            //    {
-            //        extenso += unidades[numero];
-            //    }
-            //    else if (numero < 20)
-            //    {
-            //        extenso += dezenas[numero - 10];
-            //    }
-            //    else if (numero < 100)
-            //    {
-            //        extenso += dezenasMultiplos[numero / 10];
-            //        if (numero % 10 > 0)
-            //        {
-            //            extenso += " e " + unidades[numero % 10];
-            //        }
-            //    }
-            //    else if (numero < 1000)
-            //    {
-            //        extenso += centenasMultiplos[numero / 100];
-            //        if (numero % 100 == 0)
-            //        {
-            //            extenso += " ";
-            //        }
-            //        else
-            //        {
-            //            extenso += " e " + NumeroPorExtenso(numero % 100);
-            //        }
-            //    }
-            //    else
-            //    {
-            //        extenso = "Número inválido";
-            //    }
-
-            //    return extenso;
-            //}
 
         }
 }
