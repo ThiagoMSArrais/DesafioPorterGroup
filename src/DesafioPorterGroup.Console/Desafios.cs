@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Linq.Expressions;
 
 namespace DesafioPorterGroup.Console
 {
@@ -261,6 +263,14 @@ namespace DesafioPorterGroup.Console
             }
 
             return numeros.Sum();
+        }
+        #endregion
+
+        #region Desafio CalcularExpressaoMatematica
+        public static double CalcularExpressaoMatematica(string expressaoMatematica)
+        {
+            DataTable tabela = new DataTable();
+            return Convert.ToDouble(tabela.Compute(expressaoMatematica, ""));
         }
         #endregion
     }
