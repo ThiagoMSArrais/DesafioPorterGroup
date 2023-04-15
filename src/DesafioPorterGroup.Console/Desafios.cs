@@ -252,6 +252,16 @@ namespace DesafioPorterGroup.Console
         #endregion
 
 
+        #region Desafio SomarValoresDeUmaArray
+        public static int SomarValores(int[] numeros)
+        {
+            if (numeros.Count() > 1000000)
+            {
+                throw new Exception("Limite de arrays de um milhão");
+            }
 
+            return numeros.Sum();
+        }
+        #endregion
     }
 }
