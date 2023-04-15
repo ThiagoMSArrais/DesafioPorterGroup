@@ -273,5 +273,24 @@ namespace DesafioPorterGroup.Console
             return Convert.ToDouble(tabela.Compute(expressaoMatematica, ""));
         }
         #endregion
+
+        #region Desafio RetornarObjetosDistintos
+        public static List<Carros> ObterListasDistintas(List<Carros> objetos)
+        {
+            return objetos.DistinctBy(x => x.Fabricante).ToList();
+        }
+
+        public static string Exibir(List<Carros> carros)
+        {
+            var carrosDistintos = string.Empty;
+
+            foreach(Carros carro in carros)
+            {
+                carrosDistintos += $" {carro.Fabricante},";
+            }
+
+            return carrosDistintos;
+        }
+        #endregion
     }
 }
